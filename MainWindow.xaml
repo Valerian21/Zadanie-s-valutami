@@ -1,0 +1,55 @@
+﻿<Window x:Class="Valutka.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Valutka"
+        mc:Ignorable="d"
+     Title="MainWindow" Height="273.134" Width="253.235">
+    <Canvas>
+        <Canvas.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="#FF231F1F" Offset="0.105"/>
+                <GradientStop Color="#FF026419" Offset="1"/>
+            </RadialGradientBrush>
+        </Canvas.Background>
+        <Button x:Name="btnConvertCurrency"  Height="23" Width="154"  Content="Конвертировать =&gt;" Canvas.Left="10" Canvas.Top="136"  Click="btnConvertCurrency_Click" Foreground="Black"/>
+        <ComboBox x:Name="cbCurrencyBegin"  Height="19" Width="107" Canvas.Left="10" Canvas.Top="99" Foreground="#FF170808"  >
+            <ComboBoxItem>
+                RUB
+            </ComboBoxItem>
+            <ComboBoxItem>
+                USD
+            </ComboBoxItem>
+            <ComboBoxItem>
+                EUR
+            </ComboBoxItem>
+            <ComboBoxItem>
+                BTC
+            </ComboBoxItem>
+            <ComboBoxItem>
+                BIF
+            </ComboBoxItem>
+        </ComboBox>
+        <TextBox x:Name="tbCurrencyBegin" Height="21" Width="135" Canvas.Left="10" Canvas.Top="43" FontSize="12" Foreground="Black"/>
+        <ComboBox x:Name="cbCurrencyEnd"  Height="19" Width="102" Canvas.Left="135" Canvas.Top="99" Foreground="Black" >
+            <ComboBoxItem>
+                RUB
+            </ComboBoxItem>
+            <ComboBoxItem>
+                USD
+            </ComboBoxItem>
+            <ComboBoxItem>
+                EUR
+            </ComboBoxItem>
+        </ComboBox>
+        <Label x:Name="lblFinalRates" Content="0.00" Canvas.Left="169" Canvas.Top="134" Height="24" Width="96" Foreground="White"/>
+        <Label x:Name="lblFinalRates_Copy" Content="Выберите валюту" Canvas.Left="10" Canvas.Top="69" FontSize="12" Height="29" Width="124" Foreground="White"/>
+        <Label x:Name="lblFinalRates_Copy1" Content="Выберите валюту" Canvas.Left="134" Canvas.Top="70" FontSize="12" Height="24" Width="123" Foreground="White"/>
+        <Label Content="Введите количество " Canvas.Left="10" Canvas.Top="10" Width="141" Foreground="#FFFDF5F5" Height="28"/>
+        <Image Height="35" Canvas.Top="209" Width="116" Source="coin-clip-art-52.png" Canvas.Left="-21" Stretch="UniformToFill"/>
+        <Image Height="35" Canvas.Top="209" Width="116" Source="coin-clip-art-52.png" Canvas.Left="60" Stretch="UniformToFill"/>
+        <Image Height="34" Canvas.Top="210" Width="116" Source="coin-clip-art-52.png" Canvas.Left="134" Stretch="UniformToFill"/>
+        <Image Height="72" Canvas.Top="183" Width="99" Source="pngegg.png" Canvas.Left="65" Stretch="Fill"/>
+    </Canvas>
+</Window>
